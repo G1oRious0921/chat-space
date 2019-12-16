@@ -1,12 +1,10 @@
 #ChatSpace DB設計
-
 ##usersテーブル
 |Columns|Type|Options|
 |:------|:---|:------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-
 ###Association
 - has_many :messages
 - has_many :groups, through: :groups_users
@@ -18,7 +16,6 @@
 |image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-
 ###Association
 - belongs_to :user
 - belongs_to :group
@@ -27,7 +24,6 @@
 |Columns|Type|Options|
 |:------|:---|:------|
 |name|string|null: false|
-
 ###Association
 - has_many :messages
 - has_many :users, through: :groups_users
@@ -37,7 +33,6 @@
 |:------|:---|:------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-
 ###Association
 - belongs_to :user
 - belongs_to :group

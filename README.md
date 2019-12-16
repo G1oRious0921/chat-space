@@ -2,7 +2,7 @@
 
 ##usersテーブル
 |Columns|Type|Options|
-|-------|----|-------|
+|:------|:---|:------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
@@ -13,7 +13,7 @@
 
 ##messagesテーブル
 |Columns|Type|Options|
-|-------|----|-------|
+|:------|:---|:------|
 |body|text||
 |image|string||
 |user_id|integer|null: false, foreign_key: true|
@@ -25,7 +25,7 @@
 
 ##groupsテーブル
 |Columns|Type|Options|
-|-------|----|-------|
+|:------|:---|:------|
 |name|string|null: false|
 
 ###Association
@@ -34,7 +34,7 @@
 
 ##groups_usersテーブル
 |Columns|Type|Options|
-|-------|----|-------|
+|:------|:---|:------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
